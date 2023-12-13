@@ -22,4 +22,10 @@ for (let name of names){
     console.log(name);
 }
 
-//do while loop **sniplet
+console.log("do while loop **sniplet")
+
+do {
+    const name = names[index];
+    console.log(name);
+    index++;
+} while (index < names.length);

@@ -1,9 +1,8 @@
 // Program to calculat BMI
 // BMI = weight (kg) / (height (m) * height (m))
 
-const { copyFileSync } = require('fs');
 
-const rl = require('readline').creatInterface({
+const rl = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
 });

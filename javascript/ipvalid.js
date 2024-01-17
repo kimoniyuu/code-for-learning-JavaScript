@@ -1,7 +1,17 @@
 function isValidIP(ip) {
-    const ipv4Regex = /^((25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)$/;
-
-    return ipv4Regex.test(ip);
+    let check = 0
+    let IP = ip.split(".")
+    console.log(IP)
+    for (let i = 0; i < IP.length; i++) {
+        console.log(IP[i][0])
+        if (IP.length == 4 && IP[i][0] > 0 && IP[i] >= 1&& IP[i] <= 255) {
+            check++
+        }
+        
+    }
+    if (check == 4) {
+        return true;
+    }else return false;
 }
 
 console.log(isValidIP("1.2.3.4"));        

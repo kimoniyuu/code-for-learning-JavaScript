@@ -1,9 +1,7 @@
 function isValidIP(ip) {
     let check = 0
     let IP = ip.split(".")
-    console.log(IP)
     for (let i = 0; i < IP.length; i++) {
-        console.log(IP[i][0])
         if (IP.length == 4 && IP[i][0] > 0 && IP[i] >= 1&& IP[i] <= 255) {
             check++
         }

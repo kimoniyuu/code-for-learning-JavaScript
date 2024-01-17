@@ -15,3 +15,5 @@ function NumberSplit(num) {
 }
 
 NumberSplit(11);
+
+NumberSplit(-9);

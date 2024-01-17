@@ -11,7 +11,6 @@ function capToFront(string) {
     }
 
     let result = upper + low;
-    console.log(result);
+    return result;
 }
-
-capToFront("HappY");
+console.log(capToFront("dskadasdEdaDA"));

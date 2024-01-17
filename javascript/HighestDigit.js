@@ -10,7 +10,7 @@ function HighestDigit(number) {
         }
     }
 
-    console.log(high);
+    return high;
 }
 
-HighestDigit(453);
+console.log(HighestDigit(123456789));
